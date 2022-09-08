@@ -70,11 +70,15 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 1px dashed #39BF30;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(10deg);
+}
+.experience {
+  background-image: none;
+  background-color:#A7F6A2;
 }
 .tag {
   background-color: #efefef;
@@ -101,6 +105,9 @@ header .profile-image:hover {
 .card:hover {
   border-color: #ff99ff;
 }
+.coding {
+  width: 100%;
+}
 
 ul.skills {
   padding: 0;
@@ -118,6 +125,10 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+}
+
+.hobbies {
+  margin: auto; 
 }
 
 footer {
@@ -154,9 +165,6 @@ a.social {
 a.twitter {
   background-image: url(images/twitter.svg);
 }
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
 a.github {
   background-image: url(images/github.svg);
 }
@@ -181,6 +189,10 @@ a.social:hover {
 
   header {
     min-height: 470px;
+  }
+
+  .experience {
+    min-height: 0;
   }
 
   .nav {
